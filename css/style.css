@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(33, 236, 15);
+}
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(88, 80, 80);
+    color:white;
+    padding:20px 0;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap:24px;
+    padding:24px;
+}
+.sticky{
+    height:200px;
+    padding: 24px;
+    border:none;
+    resize: none;
+    border-radius:5px;
+    font-size:18px;
+    box-shadow:rgba(0,0,0,0.3) 0px 19px  38px,rgba(0,0,0,0.22) 0px 15px 12px
+}
+.btn-add{
+    height:200px;
+    border:none;
+    outline: none;
+    background-color: rgb(88, 80, 80);
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+.btn-add:hover{
+    background-color: rgb(66, 68, 66);
+    border-radius: 5px;
+}
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 50%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: 
+    rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 15% auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 80%; 
+}
+#confirmDelete ,#cancelDelete{
+    height:20px;
+    border:none;
+    outline: none;
+    background-color: rgb(88, 80, 80);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
